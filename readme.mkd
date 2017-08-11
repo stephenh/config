@@ -1,0 +1,3 @@
+
+Not my homedir repository, but various hand-picked config files from it.
+

@@ -1,0 +1,5 @@
+#!/bin/bash
+
+cp $HOME/.inputrc .inputrc
+cat $HOME/.gitconfig | grep -v smtp > .gitconfig
+

@@ -1,0 +1,33 @@
+
+set editing-mode vi
+set keymap vi
+
+set keymap vi-command
+"gg": beginning-of-history
+"G": end-of-history
+"\C-k": history-search-backward
+"\C-j": history-search-forward
+
+# https://github.com/jacknagel/dotfiles/blob/master/inputrc
+set keymap vi-insert
+"\C-a": beginning-of-line
+"\C-b": backward-char
+"\C-d": delete-char
+"\C-e": end-of-line
+"\C-f": forward-char
+"\C-k": kill-line
+"\C-n": next-history
+"\C-p": previous-history
+"\C-L": clear-screen
+"\C-k": history-search-backward
+"\C-j": history-search-forward
+
+# Show all completions as soon as I press tab, even if there's more than one
+set show-all-if-ambiguous on
+# Ignore case
+set completion-ignore-case on
+
+# http://www.reddit.com/r/commandline/comments/kbeoe/you_can_make_readline_and_bash_much_more_user/
+set completion-prefix-display-length 2
+set show-all-if-unmodified on
+set completion-map-case on
