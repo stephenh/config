@@ -2,4 +2,5 @@
 
 cp $HOME/.inputrc .inputrc
 cat $HOME/.gitconfig | grep -v smtp > .gitconfig
+cp $HOME/.tmux.conf .tmux.conf
 
