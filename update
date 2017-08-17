@@ -3,4 +3,5 @@
 cp $HOME/.inputrc .inputrc
 cat $HOME/.gitconfig | grep -v smtp > .gitconfig
 cp $HOME/.tmux.conf .tmux.conf
+cp $HOME/.config/fish/config.fish .config/fish
 
