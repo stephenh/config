@@ -1,0 +1,15 @@
+#!/bin/bash
+
+NAME="$1"
+
+tmux has-session -t $NAME 2>/dev/null
+if [ "$?" -eq 1 ] ; then
+  tmux new-session -d -s $NAME
+  # tmux source-file ~/bin/tmux-${NAME}.conf
+fi
+
+# Set the title once to our session name, matches having set-titles off in .tmux.conf
+echo -ne "\033]0;$HOSTNAME tm $NAME\007"
+
+tmux attach-session -t $NAME
+

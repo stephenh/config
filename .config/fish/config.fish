@@ -14,7 +14,7 @@ function fish_user_key_bindings
 
   # hitting right to accept is annoying
   bind -M insert \cl accept-autosuggestion
-  bind -M visual \cl kaccept-autosuggestion
+  bind -M visual \cl accept-autosuggestion
 
   # bash style up/down history
   bind -M insert \ck history-search-backward
